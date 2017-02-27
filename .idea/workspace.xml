@@ -4,24 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6dda465-3abe-4db3-9600-e19e8d5d5ca5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/Java.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/Kruskal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/Prim.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/RBTree/RedBlackTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/SplayTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/TestHashMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/com/hy/TopologicalSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaStudy.iml" />
-    </list>
+    <list default="true" id="a6dda465-3abe-4db3-9600-e19e8d5d5ca5" name="Default" comment="" />
     <ignored path="JavaStudy.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -894,12 +877,12 @@
       <workItem from="1487726640518" duration="2304000" />
       <workItem from="1487813161168" duration="941000" />
       <workItem from="1487899465922" duration="650000" />
-      <workItem from="1488158527505" duration="2444000" />
+      <workItem from="1488158527505" duration="3041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226639000" />
+    <option name="totallyTimeSpent" value="227236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
