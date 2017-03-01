@@ -6,6 +6,8 @@ package com.hy;
  */
 public class Dijkstra {
     public static void main(String[] args){
+        System.out.println("这是Dijkstra算法代码测试");
 
+        System.out.println("这是新增加的测试代码");
     }
 }
