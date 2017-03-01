@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6dda465-3abe-4db3-9600-e19e8d5d5ca5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java" afterPath="$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java" />
     </list>
     <ignored path="JavaStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreeMap.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../Java/jdk1.8.0_111/src.zip!/java/util/TreeMap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="2249" column="35" selection-start-line="2249" selection-start-column="35" selection-end-line="2249" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dijkstra.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -85,7 +96,6 @@
         <option value="$PROJECT_DIR$/Java/src/com/hy/Prim.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/ToplogicalSort.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/TopologicalSort.java" />
-        <option value="$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/Kruskal.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/SplayTree1.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/SplayTree.java" />
@@ -95,6 +105,7 @@
         <option value="$PROJECT_DIR$/Java/src/com/hy/Test.java" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/RBTree/sample.txt" />
         <option value="$PROJECT_DIR$/Java/src/com/hy/RBTree/RedBlackTree.java" />
+        <option value="$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java" />
       </list>
     </option>
   </component>
@@ -171,6 +182,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,9 +271,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -862,14 +873,15 @@
       <workItem from="1488158527505" duration="3041000" />
       <workItem from="1488261959177" duration="670000" />
       <workItem from="1488331276259" duration="12000" />
+      <workItem from="1488337818842" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227918000" />
+    <option name="totallyTimeSpent" value="228130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1165,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/com/hy/SplayTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1227,6 +1232,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="2249" column="35" selection-start-line="2249" selection-start-column="35" selection-end-line="2249" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/com/hy/Dijkstra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>
