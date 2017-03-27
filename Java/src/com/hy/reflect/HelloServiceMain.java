@@ -7,7 +7,7 @@ package com.hy.reflect;
 public class HelloServiceMain {
     public static void main(String[] args){
         HelloServiceProxy proxy = new HelloServiceProxy();
-        HelloService helloService = (HelloService) proxy.bind(new HelloServiceImpl());
-        helloService.sayHello("张三");
+        HelloService service = (HelloService) proxy.bind(new HelloServiceImpl());
+        service.sayHello("张三");
     }
 }
