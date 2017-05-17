@@ -1,6 +1,5 @@
 package com.hy.runnable;
 
-import java.util.ArrayList;
 import java.util.concurrent.*;
 
 /**
@@ -26,14 +25,13 @@ public class TestForkJoin {
 
         System.out.println("----采用普通结果执行任务----");
         long currentTime1 = System.currentTimeMillis();
-
         long result1 = task.run();
         System.out.println("最终结果：" + result1);
         System.out.println("运行时间：" + (System.currentTimeMillis() - currentTime1));
     }
 
     private static class NumTask extends RecursiveTask<Long> {
-        private static final int THREADSHOLD = 10000;
+        private static final int THREADSHOLD = 20000;
         private long start;
         private long end;
 
@@ -44,42 +42,33 @@ public class TestForkJoin {
 
         @Override
         protected Long compute() {
-            long sum = 0;
+
             boolean canCompute = (end - start) < THREADSHOLD;
 
             if (canCompute) {
+                long sum = 0;
                 for (long i = start; i < end; i++) {
                     sum += i;
                 }
+                return sum;
             } else {
-                //分成若干个小任务
-                long step = ( end - start) / 100;
-                ArrayList<NumTask> subTasks = new ArrayList<>();
-                long startPos = start;
-                for (long i = 0; i < 100; i++) {
-                    long endPos = startPos + step;
-                    if (endPos > end)
-                        endPos = end;
+                long middle = (start + end) / 2;
 
-                    NumTask subTask = new NumTask(startPos, endPos);
-                    startPos += step + 1;
-                    subTasks.add(subTask);
+                NumTask leftSubTask = new NumTask(start, middle);
+                NumTask rightSubTask = new NumTask(middle, end);
 
-                    subTask.fork();
-                }
+                leftSubTask.fork();
+                rightSubTask.fork();
 
-                for (NumTask numTask : subTasks) {
-                    sum += numTask.join();
-                }
+                return leftSubTask.join() + rightSubTask.join();
             }
-
-            return sum;
         }
     }
 
     private static class Task {
         private long start;
         private long end;
+        private long sum = 0;
 
         Task(long start, long end) {
             this.start = start;
@@ -87,7 +76,6 @@ public class TestForkJoin {
         }
 
         Long run() {
-            long sum = 0;
             for (long i = start; i < end; i++) {
                 sum += i;
             }
