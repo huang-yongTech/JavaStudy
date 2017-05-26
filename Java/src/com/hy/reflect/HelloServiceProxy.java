@@ -11,11 +11,7 @@ import java.lang.reflect.Proxy;
 public class HelloServiceProxy implements InvocationHandler {
     private Object target;
 
-    public static void main(String[] args) {
-
-    }
-
-    public Object bind(Object target) {
+    Object bind(Object target) {
         this.target = target;
         return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
