@@ -1,4 +1,4 @@
-package com.hy;
+package com.hy.grath;
 
 import java.util.Scanner;
 
