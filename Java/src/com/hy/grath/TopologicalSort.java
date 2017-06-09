@@ -1,4 +1,4 @@
-package com.hy;
+package com.hy.grath;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -8,6 +8,10 @@ import java.util.Queue;
  * 拓扑排序算法
  */
 public class TopologicalSort {
+    public void setmVertexNode(VertexNode[] mVertexNode) {
+        this.mVertexNode = mVertexNode;
+    }
+
     //邻接表中表对应的链表的顶点
     private class EdgeNode {
         private int indexVertex;//该边所指向的顶点的位置
