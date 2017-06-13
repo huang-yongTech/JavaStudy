@@ -253,7 +253,7 @@ class SortFun {
      */
     private static int partition(int[] arr, int left, int right) {
         int start = left, end = right;
-        //获取用于分值的枢纽值，默认为取中值
+        //获取用于分值的枢纽值，默认开始为取中值
         int median = arr[(start + end) / 2];
 
         while (true) {
@@ -391,7 +391,7 @@ class SortFun {
     }
 
     /**
-     * 堆排序（递归形式）
+     * 堆排序（递归形式，主要是在构建大根堆采用的递归）
      * 1、将待排序数组R构建为一个大根堆（即根节点值大于其子节点的值）
      * 2、将最大元素即根节点元素R[0]和堆的最后一个R[n]元素互换
      * 3、对剩下的0-（n-1）个元素继续构建堆（新的根节点元素可能不满足堆序性质）
