@@ -37,7 +37,7 @@ public class JedisUtil {
             public void setTestOnBorrow(boolean testOnBorrow) {
                 super.setTestOnBorrow(true);
             }
-        }, "10.10.10.18", 6379);
+        }, "10.10.10.67", 6379);
     }
 
     public static void closeJedis(Jedis jedis) {
