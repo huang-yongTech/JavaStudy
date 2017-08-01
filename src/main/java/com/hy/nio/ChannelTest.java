@@ -1,5 +1,6 @@
 package com.hy.nio;
 
+import com.hy.utils.CloseUtil;
 import org.junit.Test;
 
 import java.io.*;
@@ -36,7 +37,7 @@ public class ChannelTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            close(fis, fos, inChannel, outChannel);
+            CloseUtil.close(fis, fos, inChannel, outChannel);
         }
     }
 
@@ -59,7 +60,7 @@ public class ChannelTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            close(inChannel, outChannel);
+            CloseUtil.close(inChannel, outChannel);
         }
     }
 
@@ -77,19 +78,7 @@ public class ChannelTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            close(inChannel, outChannel);
-        }
-    }
-
-    private void close(Closeable... closeables) {
-        if (closeables != null) {
-            for (Closeable closeable : closeables) {
-                try {
-                    closeable.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+            CloseUtil.close(inChannel, outChannel);
         }
     }
 }

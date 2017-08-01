@@ -29,20 +29,25 @@ public class BufferTest {
 
     //mark()和reset()测试
     @Test
-    public void test2(){
+    public void test2() {
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
         String str = "abcdefg";
         byteBuffer.put(str.getBytes());
         byteBuffer.flip();
 
-        byte[] bytes=new byte[byteBuffer.limit()];
+        byte[] bytes = new byte[byteBuffer.limit()];
         //mark()标记当前position位置，用于后面恢复
-        byteBuffer.get(bytes,0,2).mark();
+        byteBuffer.get(bytes, 0, 2).mark();
         //reset()重置返回之前mark()的位置
-        byteBuffer.get(bytes,2,2).reset();
+        byteBuffer.get(bytes, 2, 2).reset();
         System.out.println(byteBuffer.position());
-        if (byteBuffer.hasRemaining()){
+        if (byteBuffer.hasRemaining()) {
             System.out.println(byteBuffer.remaining());
         }
+        //清空缓冲区并返回对缓冲区的引用
+        byteBuffer.clear();
+        System.out.println(byteBuffer.capacity());
+        System.out.println(byteBuffer.limit());
+        System.out.println(byteBuffer.position());
     }
 }
