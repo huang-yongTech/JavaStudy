@@ -11,5 +11,7 @@ public class JedisClient {
     public static void main(String[] args) {
         Jedis jedis = JedisUtil.getJedis();
         jedis.set("k1", "测试");
+
+        JedisUtil.closeJedis(jedis);
     }
 }

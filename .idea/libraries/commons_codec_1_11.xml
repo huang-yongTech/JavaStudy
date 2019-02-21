@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/libs/commons-codec-1.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/commons-codec-1.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

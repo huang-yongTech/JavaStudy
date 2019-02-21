@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 
 /**
  * Created by huangyong on 2017/8/31
@@ -11,8 +12,15 @@ import java.security.NoSuchAlgorithmException;
 public class Encryption {
     @Test
     public void encrypt() {
-        String pwd = "123";
-        System.out.println(MD5(pwd));
+        System.out.println(new Date().getTime());
+    }
+
+    private void encryption(String key) {
+        String md5Key = MD5(key);
+        if (md5Key != null) {
+            int length = md5Key.length();
+
+        }
     }
 
     private String MD5(String pwd) {
