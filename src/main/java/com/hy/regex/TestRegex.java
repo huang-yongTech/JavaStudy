@@ -11,10 +11,10 @@ public class TestRegex {
 
     public static void main(String[] args) {
         String str = "Java now has regular expressions";
-        String regex="\\w+";
+        String regex = "\\w+";
         Matcher matcher = Pattern.compile(regex).matcher(str);
-        while (matcher.find()){
-            System.out.println(matcher.start());
+        while (matcher.find()) {
+            System.out.println(str.substring(matcher.start(), matcher.end()));
         }
     }
 }

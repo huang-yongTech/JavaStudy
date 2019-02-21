@@ -9,8 +9,8 @@ import java.util.concurrent.*;
 public class TestForkJoin {
     public static void main(String[] args) {
         ForkJoinPool forkJoinPool = new ForkJoinPool();
-        NumTask numTask = new NumTask(0, 100000L);
-        Task task = new Task(0, 100000L);
+        NumTask numTask = new NumTask(0, 1000000000L);
+        Task task = new Task(0, 1000000000L);
 
         System.out.println("----采用fork/join执行任务----");
         long currentTime = System.currentTimeMillis();
@@ -43,11 +43,11 @@ public class TestForkJoin {
         @Override
         protected Long compute() {
 
-            boolean canCompute = (end - start) < THREADSHOLD;
+            boolean canCompute = (end - start) <= THREADSHOLD;
 
             if (canCompute) {
                 long sum = 0;
-                for (long i = start; i < end; i++) {
+                for (long i = start; i <= end; i++) {
                     sum += i;
                 }
                 return sum;
@@ -55,7 +55,7 @@ public class TestForkJoin {
                 long middle = (start + end) / 2;
 
                 NumTask leftSubTask = new NumTask(start, middle);
-                NumTask rightSubTask = new NumTask(middle, end);
+                NumTask rightSubTask = new NumTask(middle + 1, end);
 
                 leftSubTask.fork();
                 rightSubTask.fork();
@@ -76,7 +76,7 @@ public class TestForkJoin {
         }
 
         Long run() {
-            for (long i = start; i < end; i++) {
+            for (long i = start; i <= end; i++) {
                 sum += i;
             }
             return sum;
