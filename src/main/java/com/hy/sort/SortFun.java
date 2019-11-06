@@ -272,8 +272,6 @@ class SortFun {
 
         if (arr[start] >= arr[right]) {
             swapReference(arr, start, right);
-        } else {
-            start++;
         }
 
         return start;
