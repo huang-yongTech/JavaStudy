@@ -252,30 +252,22 @@ class SortFun {
      * @return 中值位置
      */
     private static int partition(int[] arr, int left, int right) {
-        int mid = left + (right - left) / 2;
+        int start = left, end = right;
         //获取用于分值的枢纽值，默认开始为取中值
-        int median = arr[mid];
-        //将枢纽值交换到最右边
-        swapReference(arr, mid, right);
+        int median = arr[(start + end) / 2];
 
-        int start = left, end = right - 1;
-
-        while (start < end) {
-            while (start < end && arr[start] < median) {
+        while (true) {
+            while (start <= end && arr[start] < median) {
                 start++;
             }
-            while (start < end && arr[end] >= median) {
+            while (start <= end && arr[end] > median) {
                 end--;
             }
-
-            swapReference(arr, start, end);
+            if (start < end) {
+                swapReference(arr, start, end);
+            } else
+                break;
         }
-
-        if (arr[start] > arr[right]) {
-            //再将枢纽值交换回来
-            swapReference(arr, start, right);
-        }
-
         return start;
     }
 
