@@ -5,8 +5,8 @@ package com.hy.singleton;
  */
 public class SingletonTest {
     public static void main(String[] args) {
-        Singleton singleton1 = Singleton.INSTANCE;
-        Singleton singleton2 = Singleton.INSTANCE;
+        EnumSingleton singleton1 = EnumSingleton.INSTANCE;
+        EnumSingleton singleton2 = EnumSingleton.INSTANCE;
 
         System.out.println("测试是不是单例：" + (singleton1 == singleton2));
     }

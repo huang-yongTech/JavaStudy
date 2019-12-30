@@ -4,7 +4,7 @@ package com.hy.singleton;
  * Created by huangyong on 2019/3/1
  * 枚举单例模式
  */
-public enum Singleton {
+public enum EnumSingleton {
     INSTANCE;
 
     public void print(String s) {
