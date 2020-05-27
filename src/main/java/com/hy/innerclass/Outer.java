@@ -6,6 +6,8 @@ package com.hy.innerclass;
 public class Outer {
     private String name = "outer name";
 
+    private String name1 = new String("new name");
+
     public class Inner implements IClass {
 
         @Override
